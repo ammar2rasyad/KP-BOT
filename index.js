@@ -82,7 +82,7 @@ client.on('message_create', async (msg) => {
         const brosur = MessageMedia.fromFilePath('./Media/Brosur Super Karantina Priority.pdf');
         const fatih = MessageMedia.fromFilePath('./Media/Testimoni_Fatih.mp4');
         client.sendMessage(number,
-`Perkenalkan, saya Dila, Konsultan Pendidikan dari Bimbel Priority. Alhamdulillah sudah 5 tahun meluluskan 5.137 siswa kami ke Perguruan Tinggi Negeri.
+`Perkenalkan, saya adalah Konsultan Pendidikan dari Bimbel Priority. Alhamdulillah sudah 5 tahun meluluskan 5.137 siswa kami ke Perguruan Tinggi Negeri.
 Terima kasih sudah menguhubungi 😊🙏`
         );
         client.sendMessage(number, 
