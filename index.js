@@ -2,9 +2,10 @@ const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const fs = require("fs");
 const qrcode = require('qrcode-terminal');
 
+const cId = process.argv.slice(2);
 const client = new Client(
     {
-    authStrategy: new LocalAuth(),
+    authStrategy: new LocalAuth({ clientId: cId}),
     // proxyAuthentication: { username: 'username', password: 'password' },
     restartOnAuthFail: true,
     puppeteer: { 
