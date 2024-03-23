@@ -48,9 +48,10 @@ client.on('auth_failure', msg => {
     console.error('AUTHENTICATION FAILURE', msg);
 });
 
+
 client.on('ready', () => {
-    console.log('READY');
-    client.sendMessage(client.info.wid._serialized,"```[Logs : KP Bot connected & ready to use | "+ new Date().toLocaleString() +"```]");
+    console.log('KP BOT CONNECTED TO '+ client.info.pushname.toUpperCase() +' (' +client.info.wid.user+') & READY TO USE');
+    client.sendMessage(client.info.wid._serialized,"```[Logs : KP Bot connected to "+ client.info.pushname +" (" + client.info.wid.user + ") & ready to use | "+ new Date().toLocaleString() +"```]");
 });
 
 client.on('disconnected', function() {
